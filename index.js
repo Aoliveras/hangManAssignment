@@ -14,7 +14,7 @@ const words = [
 
 function gameStart() {
   const word = words[Math.floor(Math.random() * words.length)];
-  console.log(word);
+  //   console.log(word);
   const nameSplit = word.split('');
   // eslint-disable-next-line prefer-const
   const space = [];
@@ -26,7 +26,7 @@ function gameStart() {
 
   console.log(space.join(' '));
 
-  console.log(word);
+  //   console.log(word);
 
   const inputUser = readlineSync.question('Please guess a letter ');
   //   console.log(inputUser);
@@ -58,4 +58,4 @@ function correctGuess() {}
 
 function incorrectGuess() {}
 
-gameStart(9);
+gameStart();
